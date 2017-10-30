@@ -122,7 +122,7 @@ articleView.create = () => {
 // COMMENT: Where is this function called? Why?
 // This function is called in "index.html" after all the other scripts are called.  It's so that these functions are called when "index.html" is loaded. If we used a "ready" call here, these functions would be called when both "new.html" and "index.html" are called, which we don't want.
 articleView.initIndexPage = () => {
-  articles.forEach(article => $('#articles').append(article.toHtml()));
+  articles.forEach(article => $('#articles').append(article.toHtml())); // eslint-disable-line
   articleView.populateFilters();
   articleView.handleCategoryFilter();
   articleView.handleAuthorFilter();
