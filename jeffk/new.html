@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lab 5</title>
     <link rel="stylesheet" href="vendor/styles/normalize.css">
-    <link rel="stylesheet" href="vendor/styles/default.css">
+    <link rel="stylesheet" href="vendor/styles/railscasts.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
@@ -26,7 +26,7 @@
             {{publishStatus}}
           </div>
         </header>
-        <section class="article-body"><pre><code>{{{body}}}</code></pre></section>
+        <section class="article-body">{{{body}}}</section>
         <a href="#" class="read-on">Read on &rarr;</a>
       </article>
     </script>
@@ -103,8 +103,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
-    <script src="vendor/scripts/highlight.pack.js"></script>
     <script src="node_modules/marked/marked.min.js"></script>
+    <script src="vendor/scripts/highlight.pack.js"></script>
 
     <!-- NOTE (stretch goal): Include script tags for 3rd party libraries to enable Markdown rendering and code syntax highlighting. Use the minified CDN. Keep in mind that if we want these features to render properly on our main blog page (index.html) that we'll need to add those scripts over there, too. -->
     <script src="scripts/blogArticles.js"></script>
